@@ -4,17 +4,28 @@
     box-sizing: border-box;
 }
 
+.flex-container-col {
+    display: flex;
+    flex-flow: column wrap;
+    
+  }
+
 .debug{
     border:1px solid white;
 }
 
 
-body{
-    background-color: black;
-    color: white;
+html {
+
+    font-family: 'Montserrat', sans-serif;
 
 }
 
+body{
+    background-color: #141922;
+    color: white;
+
+}
 
 .wrapper{
     height: 100vh;
@@ -24,19 +35,32 @@ body{
 .wrapper-content{
     width: 100%;
     height: calc(100% - 90px);
-    background-color: blue;
     display: flex;
     
 }
 
 aside{
     width: 230px;
-    background-color: red;
+    background-color: black;
 }
 
+aside > span {
+    padding: 0px 10px 10px;
+}
+
+
+.logo {
+    height: 90px;
+}
+
+.logo img {
+    width: 80%;
+    padding: 20px;
+    
+}
 main{
  width: calc(100% - 230px);
- background-color: orangered;
+
 
 }
 
