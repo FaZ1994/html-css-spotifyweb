@@ -1,143 +1,242 @@
 /* RESET */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
 }
 
 .flex-container-col {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content:space-between;
-    
-  }
-
-.debug {
-    border:1px solid white;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
 }
 
+.flex-container-cent {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
 
+.debug {
+  border: 1px solid white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
 html {
-
-    font-family: 'Montserrat', sans-serif;
-
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
-    background-color: #141922;
-    color: white;
-
+  background-color: #141922;
+  color: white;
 }
 
 .wrapper {
-    height: 100vh;
-    width: 100%;
+  height: 100vh;
+  width: 100%;
 }
 
 .wrapper-content {
-    width: 100%;
-    height: calc(100% - 90px);
-    display: flex;
-    
+  width: 100%;
+  height: calc(100% - 90px);
+  display: flex;
 }
 
-
 aside {
-    width: 230px;
-    background-color: black;
-    padding: 0px 10px 10px;
+  width: 230px;
+  background-color: black;
+  padding: 0px 10px 10px;
 }
 
 aside .logo {
-    height: 90px;
+  height: 90px;
 }
 
 aside .logo img {
-    width: 80%;
-    padding:10px 0;
+  width: 60%;
+  padding: 10px 0;
 }
 
-aside .up-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-
-aside ul li .icon {
-    padding-right:10px;
-    }
-
-aside ul:hover li {
-    border-left: 2px solid #adff2f;
+.icon {
+  display: flex;
+  align-items: center;
 }
 
-
-.playlist h4{
-    padding: 10px 0px;
-    text-transform: uppercase;
+.icon img {
+  width: 10%;
 }
 
-.playlist ul li {
-    padding: 10px 0px;
+.icon a:hover {
+  cursor: pointer;
 }
 
-.big{
-    font-size: 2.4em;
-    vertical-align: middle;
+aside a {
+  color: #a3a3a3;
 }
 
+.filter {
+  filter: invert(35%) saturate(100%) brightness(100%);
+}
 
-.download{
-    border-bottom: 1px solid #d2d2d2;
-    padding-bottom: 5%;
-    
+aside a:hover {
+  border-left: 2px solid #adff2f;
+  color: white;
+}
+
+.playlist h4 {
+  padding: 20px 0px 10px 0px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.playlist-menu {
+  padding-top: 10px;
+}
+
+.medium {
+  font-size: 1.4em;
+  vertical-align: middle;
+}
+
+.big {
+  font-size: 2.4em;
+  vertical-align: middle;
+}
+
+.user-profile {
+  background-color: #808080;
+  border-radius: 50%;
+}
+
+.text::before {
+  content: "\00a0";
+}
+
+.download {
+  border-bottom: 1px solid #d2d2d2;
+  padding-bottom: 5%;
 }
 
 .user {
-    padding-top: 5%;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
-
-
-
-
-
-
-
-
-
+.user a {
+  color: white;
+}
 main {
- width: calc(100% - 230px);
-
+  width: calc(100% - 230px);
 }
 
 nav.top {
-    width: 100%;
-    height: 90px;
-    position: fixed;
-    z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 90px;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.btn {
+  text-transform: uppercase;
+  border: 1px solid white;
+  border-radius: 25px;
+  max-width: max-content;
+  padding: 0.5% 2%;
+  font-size: small;
+  margin: 0 10px;
 }
 
 .main-content {
- height: 100%;
- width: 100%;
- overflow-y: auto;
- padding-top:90px;
-
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  padding-top: 90px;
 }
 
 footer {
-    height: 90px;
-    width: 100%;
-    background-color: #282828;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+  height: 90px;
+  width: 100%;
+  background-color: #282828;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+footer img {
+  width: 38px;
+  padding-left: 10px;
+}
+
+.player-bar {
+  height: 90px;
+}
+
+.play-bar-left {
+}
+
+.left li .text {
+  padding-left: 10px;
+}
+
+.sub-text {
+  font-size: 10px;
+  color: #a3a3a3;
+}
+
+.sub-text::before {
+  content: "\00a0";
+}
+
+.bar {
+  background-color: #5a5a5a;
+  height: 3px;
+  border-radius: 2px;
+}
+
+.song-timing{
+  width: 200px;
+}
+
+.volume {
+
+    width: 20px;
+
+}
+.center {
+  justify-content: space-evenly;
+  padding-bottom: 10px;
+}
+
+.time {
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.right{
+    justify-content: space-between;
+    gap: 10px;
 }

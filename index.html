@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Spotify</title>
   </head>
   <body>
@@ -22,79 +23,204 @@
       <div class="wrapper-content">
         <aside class="flex-container-col">
           <div class="nav-menu">
-          <span class="logo">
-            <img src="./img/logo.svg" alt="Spotify" />
-          </span>
+            <span class="logo">
+              <img src="./img/logo.svg" alt="Spotify" />
+            </span>
 
-          <ul class="up-menu">
-            <li>
-              <span class="icon" id="home"
-                ><i class="fa-solid fa-house"></i> &nbsp;Home</span
-              >
-            </li>
-            <li>
-              <span class="icon" id="search"
-                ><i class="fa-solid fa-magnifying-glass"></i> &nbsp;Cerca</span
-              >
-            </li>
-            <li>
-              <span class="library" id="search"
-                ><i class="fa-solid fa-book-open-reader"></i> &nbsp;La tua
-                Libreria</span
-              >
-            </li>
-          </ul>
-
-          <span class="playlist">
-            <h4>Playlist</h4>
-            <span class="icon" id="add-playlist"
-              ><i class="fa-solid fa-square-plus big"></i>
-              <span class="text">&nbsp;Crea Playlist</span>
-              </span>
-
-            <ul class="playlist-menu">
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
+            <ul class="up-menu">
+              <li>
+                <a href="#" class="icon" id="home"
+                  ><img class="filter" src="./img/home.svg" alt="" />
+                  <span class="text">Home</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon" id="search"
+                  ><img class="filter" src="./img/search.svg" alt="search" />
+                  <span class="text">Cerca</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon" id="library"
+                  ><img class="filter" src="./img/libreria.svg" alt="" /> 
+                  <span class="text">La tua Libreria</span></a
+                >
+              </li>
             </ul>
-          </span>
 
-        </div>
+            <span class="playlist">
+              <h4>Playlist</h4>
+              <a href="#" class="icon" id="add-playlist"
+                ><i class="fa-solid fa-square-plus big"></i>
+                <span class="text">Crea Playlist</span>
+              </a>
 
-
-        
-        <div class="bottom-nav">
-          <div class="download">
-
-            <span><i class="fa-solid fa-circle-arrow-down"></i> Installa app</span>
+              <ul class="playlist-menu">
+                <li><a href="#" id=""> Nome Playlist </a></li>
+                <li><a href="#" id=""> Nome Playlist </a></li>
+                <li><a href="#" id=""> Nome Playlist </a></li>
+                <li><a href="#" id=""> Nome Playlist </a></li>
+                <li><a href="#" id=""> Nome Playlist </a></li>
+                <li><a href="#" id=""> Nome Playlist </a></li>
+                <li><a href="#" id=""> Nome Playlist </a></li>
+              </ul>
+            </span>
           </div>
 
-          <span class="line"></span>
-          <div class="user">
-            <span><i class="fa-solid fa-circle-user"></i> John Doe</span>
+          <div class="bottom-nav">
+            <div class="download">
+              <a href="#" class="icon small" id="download">
+                <img class="filter" src="./img/download.svg" alt="download" />
+                <span class="text">Installa app</span>
+              </a>
+            </div>
+
+            <div class="user">
+              <a href="#" class="icon medium" id="user">
+                <img class="user-profile" src="./img/profile.svg" alt="user" />
+
+                <span class="text">John Doe</span></a
+              >
+            </div>
           </div>
-        </div>
-
-
-
-
-
-
-
-
-
         </aside>
+
         <main>
-          <nav class="top"></nav>
-          <div class="main-content"></div>
+          <nav class="top">
+            <div class="btn">Effettua l'upgrade</div>
+          </nav>
+          <div class="main-content flex-container">
+            <div class="played">
+              <div class="card"></div>
+            </div>
+          </div>
         </main>
       </div>
+
+
+
       <footer>
-        <div class="player-bar"></div>
+
+
+        <div class="player-bar flex-container-cent">
+          <nav class="play-bar-left">
+
+            <ul class="left flex-container">
+              <li>
+                <a href="#" class="icon" id="cover"
+                  ><img src="./img/sinister.jpeg" alt="" />
+                  <span class="text">Sinister
+                    <p class="sub-text">Brano Nome</p>
+                  </span>
+                  
+                  </a
+                >
+              </li>
+              
+              <li>
+
+                <a href="#" class="icon" id="favorites"
+                ><i class="fa-solid fa-heart"></i>
+              </a>
+                
+              </li>
+
+              <a href="#" class="icon" id="folder"
+                ><i class="fa-solid fa-folder"></i>
+              </a>
+
+            </ul>
+
+
+            
+
+          </nav>
+          <nav class="play-bar-cent">
+
+            <ul class="center flex-container">
+              <li>
+                <a href="#" class="icon" id="shuffle"
+                  ><i class="fa-solid fa-shuffle"></i>
+                  </a
+                >
+              </li>
+              
+              <li>
+
+                <a href="#" class="icon" id="backward"
+                ><i class="fa-solid fa-backward-step"></i>
+              </a>
+                
+              </li>
+
+
+              <li>
+              <a href="#" class="icon medium" id="play"
+                ><i class="fa-solid fa-circle-play"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="icon" id="forward"
+                ><i class="fa-solid fa-forward-step"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="icon" id="rotate"
+                ><i class="fa-solid fa-arrow-rotate-right"></i>
+              </a>
+            </li>
+
+            
+            
+            </ul>
+
+            <ul class=" timing-bar flex-container">
+
+              <li><p class="time current">0:25</p></li>
+              <li><div class="bar song-timing"> </div></li>
+              <li><p class="time total">4:35</p></li>
+            </ul>
+            
+            
+            
+          </nav>
+          <nav class="play-bar-right">
+
+            <ul class="right flex-container">
+              <li>
+                <a href="#" class="icon" id="list"
+                  ><i class="fa-solid fa-list-ul"></i>
+                  </a
+                >
+              </li>
+              
+              <li>
+
+                <a href="#" class="icon" id="desktop"
+                ><i class="fa-solid fa-desktop"></i>
+              </a>
+                
+              </li>
+
+
+            <li>
+              <a href="#" class="icon" id="volume"
+                ><i class="fa-solid fa-volume-high">
+                </i>
+                <div class="bar volume"></div>
+              </a>
+            </li>
+            
+            
+            </ul>
+
+
+
+          </nav>
+          
+        </div>
       </footer>
     </div>
   </body>
