@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <title>Spotify</title>
   </head>
   <body>
@@ -42,7 +42,7 @@
               </li>
               <li>
                 <a href="#" class="icon" id="library"
-                  ><img class="filter" src="./img/libreria.svg" alt="" /> 
+                  ><img class="filter" src="./img/libreria.svg" alt="" />
                   <span class="text">La tua Libreria</span></a
                 >
               </li>
@@ -86,140 +86,158 @@
         </aside>
 
         <main>
-          <nav class="top">
+          <div class="top-bar">
             <div class="btn">Effettua l'upgrade</div>
-          </nav>
-          <div class="main-content flex-container">
-            <div class="played">
-              <div class="card"></div>
+          </div>
+          <div class="main-content">
+            <nav class="top-nav">
+              <ul class="top-ul flex-container">
+                <li> <a href="#">In evidenza </a></li>
+                <li> <a href="#"> Podcast </a></li>
+                <li> <a href="#"> Classifiche </a></li>
+                <li> <a href="#"> Generi e Mood </a></li>
+                <li> <a href="#"> Nuove uscite </a></li>
+                <li> <a href="#"> Scopri </a></li>
+              </ul>
+            </nav>
+            
+
+            <h2>Recently played</h2>
+            <div class="played flex-container">
+      
+              <div class="card" id="heavy-metal">
+                <span class="album-card">
+                  <img src="./img/metal_lifting.jpg" alt="">
+                </span>
+                <span class="text-card"><h3>Heavy Metal</h3>
+                <p>Subtitle</p></span>
+              </div>
+              <div class="card" id="heavy-metal">
+                <span class="album-card">
+                  <img src="./img/metal_lifting.jpg" alt="">
+                </span>
+                <span class="text-card"><h3>Heavy Metal</h3>
+                <p>Subtitle</p></span>
+              </div>
+              <div class="card" id="heavy-metal">
+                <span class="album-card">
+                  <img src="./img/metal_lifting.jpg" alt="">
+                </span>
+                <span class="text-card"><h3>Heavy Metal</h3>
+                <p>Subtitle</p></span>
+              </div>
+              <div class="card" id="heavy-metal">
+                <span class="album-card">
+                  <img src="./img/metal_lifting.jpg" alt="">
+                </span>
+                <span class="text-card"><h3>Heavy Metal</h3>
+                <p>Subtitle</p></span>
+              </div>
+              <div class="card" id="heavy-metal">
+                <span class="album-card">
+                  <img src="./img/metal_lifting.jpg" alt="">
+                </span>
+                <span class="text-card"><h3>Heavy Metal</h3>
+                <p>Subtitle</p></span>
+              </div>
+              <div class="card" id="heavy-metal">
+                <span class="album-card">
+                  <img src="./img/metal_lifting.jpg" alt="">
+                </span>
+                <span class="text-card"><h3>Heavy Metal</h3>
+                <p>Subtitle</p></span>
+              </div>
             </div>
           </div>
         </main>
       </div>
 
-
-
       <footer>
-
-
         <div class="player-bar flex-container-cent">
-          <nav class="play-bar-left">
-
-            <ul class="left flex-container">
+          <nav class="nav-bar-left">
+            <ul class="pl-b-left flex-container">
               <li>
                 <a href="#" class="icon album" id="cover"
                   ><img src="./img/sinister.jpeg" alt="" />
-                  <span class="text">Sinister
+                  <span class="text"
+                    >Sinister
                     <p class="sub-text">Brano Nome</p>
                   </span>
-                  
-                  </a
-                >
+                </a>
               </li>
-              
-              <li>
 
+              <li>
                 <a href="#" class="icon" id="favorites"
-                ><i class="fa-solid fa-heart"></i>
-              </a>
-                
+                  ><i class="fa-regular fa-heart"></i>
+                </a>
               </li>
 
               <a href="#" class="icon" id="folder"
-                ><i class="fa-solid fa-folder"></i>
+                ><i class="fa-regular fa-folder"></i>
               </a>
-
             </ul>
-
-
-            
-
           </nav>
-          <nav class="play-bar-cent">
-
-            <ul class="center flex-container">
+          <nav class="nav-bar-cent">
+            <ul class="pl-b-cent flex-container">
               <li>
                 <a href="#" class="icon" id="shuffle"
                   ><i class="fa-solid fa-shuffle"></i>
-                  </a
-                >
+                </a>
               </li>
-              
-              <li>
 
+              <li>
                 <a href="#" class="icon" id="backward"
-                ><i class="fa-solid fa-backward-step"></i>
-              </a>
-                
+                  ><i class="fa-solid fa-backward-step"></i>
+                </a>
               </li>
 
+              <li>
+                <a href="#" class="icon medium" id="play"
+                  ><i class="fa-regular fa-circle-play"></i>
+                </a>
+              </li>
 
               <li>
-              <a href="#" class="icon medium" id="play"
-                ><i class="fa-solid fa-circle-play"></i>
-              </a>
-            </li>
+                <a href="#" class="icon" id="forward"
+                  ><i class="fa-solid fa-forward-step"></i>
+                </a>
+              </li>
 
-            <li>
-              <a href="#" class="icon" id="forward"
-                ><i class="fa-solid fa-forward-step"></i>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="icon" id="rotate"
-                ><i class="fa-solid fa-arrow-rotate-right"></i>
-              </a>
-            </li>
-
-            
-            
+              <li>
+                <a href="#" class="icon" id="rotate"
+                  ><i class="fa-solid fa-arrow-rotate-right"></i>
+                </a>
+              </li>
             </ul>
 
-            <ul class=" timing-bar flex-container">
-
+            <ul class="timing-bar flex-container">
               <li><p class="time current">0:25</p></li>
-              <li><div class="bar song-timing"> </div></li>
+              <li><div class="bar song-timing"></div></li>
               <li><p class="time total">4:35</p></li>
             </ul>
-            
-            
-            
           </nav>
           <nav class="play-bar-right">
-
-            <ul class="right flex-container">
+            <ul class="pl-b-right flex-container">
               <li>
                 <a href="#" class="icon" id="list"
                   ><i class="fa-solid fa-list-ul"></i>
-                  </a
-                >
+                </a>
               </li>
-              
+
               <li>
-
                 <a href="#" class="icon" id="desktop"
-                ><i class="fa-solid fa-desktop"></i>
-              </a>
-                
+                  ><i class="fa-solid fa-desktop"></i>
+                </a>
               </li>
 
-
-            <li>
-              <a href="#" class="icon" id="volume"
-                ><i class="fa-solid fa-volume-high">
-                </i>
-                <div class="bar volume"></div>
-              </a>
-            </li>
-            
-            
+              <li>
+                <a href="#" class="icon" id="volume"
+                  ><i class="fa-solid fa-volume-high"> </i>
+                  <div class="bar volume"></div>
+                </a>
+              </li>
             </ul>
-
-
-
           </nav>
-          
         </div>
       </footer>
     </div>
