@@ -28,51 +28,65 @@
             </span>
 
             <ul class="up-menu">
+
               <li>
-                <a href="#" class="icon" id="home"
-                  ><img class="filter" src="./img/home.svg" alt="" />
-                  <span class="text">Home</span></a
-                >
+                <label class="icon" id="home">
+                  <img class="filter" src="./img/home.svg" alt="home" />
+                  <input type="radio" name="up-menu"/>
+                  <span class="text">Home</span> 
+              </label>
+            </li>
+              
+              <li>
+
+                <label class="icon" id="search">
+                  <img class="filter" src="./img/search.svg" alt="search" />
+                  <input type="radio" name="up-menu"/>
+                  <span class="text">Cerca</span> 
+              </label>
+
+              
               </li>
               <li>
-                <a href="#" class="icon" id="search"
-                  ><img class="filter" src="./img/search.svg" alt="search" />
-                  <span class="text">Cerca</span></a
-                >
-              </li>
-              <li>
-                <a href="#" class="icon" id="library"
-                  ><img class="filter" src="./img/libreria.svg" alt="" />
-                  <span class="text">La tua Libreria</span></a
-                >
+                <label class="icon" id="library">
+                  <img class="filter" src="./img/libreria.svg" alt="library" />
+                  <input type="radio" name="up-menu"/>
+                  <span class="text">La tua libreria</span> 
+              </label>
               </li>
             </ul>
 
             <span class="playlist">
               <h4>Playlist</h4>
-              <a href="#" class="icon" id="add-playlist"
-                ><i class="fa-solid fa-square-plus big"></i>
-                <span class="text">Crea Playlist</span>
-              </a>
 
-              <ul class="playlist-menu">
-                <li><a href="#" id=""> Nome Playlist </a></li>
-                <li><a href="#" id=""> Nome Playlist </a></li>
-                <li><a href="#" id=""> Nome Playlist </a></li>
-                <li><a href="#" id=""> Nome Playlist </a></li>
-                <li><a href="#" id=""> Nome Playlist </a></li>
-                <li><a href="#" id=""> Nome Playlist </a></li>
-                <li><a href="#" id=""> Nome Playlist </a></li>
-              </ul>
+              <a href="#" class="icon" id="add-playlist"
+              ><i class="fa-solid fa-square-plus big"></i>
+              <span class="text">Crea Playlist</span>
+            </a>
+
+            <ul class="playlist-menu">
+              <li><a href="#"> Nome Playlist </a></li>
+              <li><a href="#"> Nome Playlist </a></li>
+              <li><a href="#"> Nome Playlist </a></li>
+              <li><a href="#"> Nome Playlist </a></li>
+              <li><a href="#"> Nome Playlist </a></li>
+              <li><a href="#"> Nome Playlist </a></li>
+              <li><a href="#"> Nome Playlist </a></li>
+            </ul>
+
+              
             </span>
           </div>
 
           <div class="bottom-nav">
             <div class="download">
-              <a href="#" class="icon small" id="download">
-                <img class="filter" src="./img/download.svg" alt="download" />
-                <span class="text">Installa app</span>
-              </a>
+
+              <label>
+                <span class="icon small" id="download">
+                <input type="radio" name="download"/> <span><img class="filter" src="./img/download.svg" alt="download" /> Installa app </span>
+                </span>
+              </label>
+    
             </div>
 
             <div class="user">
@@ -92,62 +106,144 @@
           <div class="main-content">
             <nav class="top-nav">
               <ul class="top-ul flex-container">
-                <li> <a href="#">In evidenza </a></li>
-                <li> <a href="#"> Podcast </a></li>
-                <li> <a href="#"> Classifiche </a></li>
-                <li> <a href="#"> Generi e Mood </a></li>
-                <li> <a href="#"> Nuove uscite </a></li>
-                <li> <a href="#"> Scopri </a></li>
+                <li>
+                  <label>
+                    <input type="radio" name="top-nav"/>
+                    <span>In evidenza</span> 
+                </label>
+              </li>
+                <li>
+                  <label>
+                    <input type="radio" name="top-nav"/>
+                    <span>Podcast</span>
+                  </label>
+                  </li>
+                <li>
+                  <label>
+                    <input type="radio" name="top-nav"/>
+                    <span>Classifiche</span>
+                  </label>
+                  </li>
+                <li>
+                   <label>
+                     <input type="radio" name="top-nav"/>
+                     <span> Generi e Mood</span>
+                    </li>
+                  </label>
+                <li>
+                  <label>
+                    <input type="radio" name="top-nav"/>
+                    <span> Nuove uscite</span>
+                  </label>
+                  </li>
+                <li>
+                  <label>
+                  <input type="radio" name="top-nav"/>
+                  <span>Scopri</span>
+                </label>
+                </li>
               </ul>
             </nav>
             
-
+            <div class="recently-played">
             <h2>Recently played</h2>
-            <div class="played flex-container">
-      
+            <div class="row flex-container">
+            
               <div class="card" id="heavy-metal">
                 <span class="album-card">
                   <img src="./img/metal_lifting.jpg" alt="">
+                  <span href="#" class="icon medium">
+                  <i class="fa-regular fa-circle-play"></i>
+                </span>
                 </span>
                 <span class="text-card"><h3>Heavy Metal</h3>
                 <p>Subtitle</p></span>
               </div>
-              <div class="card" id="heavy-metal">
+              <div class="card" id="stranger-things">
                 <span class="album-card">
-                  <img src="./img/metal_lifting.jpg" alt="">
+                  <img src="./img/stranger.jpeg" alt="">
                 </span>
-                <span class="text-card"><h3>Heavy Metal</h3>
+                <span class="text-card"><h3>Stranger Things, Vol. 1(a Netflix Original Series Sondtrack)</h3>
+                <p>Kyle Dixon &amp; Michael Stein</p></span>
+              </div>
+              <div class="card" id="a-quiet-place">
+                <span class="album-card">
+                  <img src="./img/aquietplace.jpeg" alt="a quiet place">
+                </span>
+                <span class="text-card"><h3>A quiet place</h3>
                 <p>Subtitle</p></span>
               </div>
-              <div class="card" id="heavy-metal">
+              <div class="card" id="split">
                 <span class="album-card">
-                  <img src="./img/metal_lifting.jpg" alt="">
+                  <img src="./img/split.jpeg" alt="split">
                 </span>
-                <span class="text-card"><h3>Heavy Metal</h3>
+                <span class="text-card"><h3>Split</h3>
                 <p>Subtitle</p></span>
               </div>
-              <div class="card" id="heavy-metal">
+              <div class="card" id="a-cure-for-wellness">
                 <span class="album-card">
-                  <img src="./img/metal_lifting.jpg" alt="">
+                  <img src="./img/cure.jpeg" alt="a cure for wellness">
                 </span>
-                <span class="text-card"><h3>Heavy Metal</h3>
+                <span class="text-card"><h3>A cure for wellness</h3>
                 <p>Subtitle</p></span>
               </div>
-              <div class="card" id="heavy-metal">
+              <div class="card" id="sinister">
                 <span class="album-card">
-                  <img src="./img/metal_lifting.jpg" alt="">
+                  <img src="./img/sinister.jpeg" alt="">
                 </span>
-                <span class="text-card"><h3>Heavy Metal</h3>
-                <p>Subtitle</p></span>
-              </div>
-              <div class="card" id="heavy-metal">
-                <span class="album-card">
-                  <img src="./img/metal_lifting.jpg" alt="">
-                </span>
-                <span class="text-card"><h3>Heavy Metal</h3>
+                <span class="text-card"><h3>Sinister</h3>
                 <p>Subtitle</p></span>
               </div>
             </div>
+             </div>
+
+             <div class="created-for-user">
+              <h2>Creato per John Doe</h2>
+              <p>Più ascolti, più accurati saranno i suggerimenti</p>
+              <div class="row flex-container">
+              
+                <div class="card" id="release">
+                  <span class="album-card">
+                    <img src="./img/radar.jpeg" alt="release-radar">
+                  </span>
+                  <span class="text-card"><h3>Relase Radar</h3>
+                  </span>
+                </div>
+                <div class="card" id="daily-mix">
+                  <span class="album-card">
+                    <img src="./img/mixdaily.jpeg" alt="daily mix">
+                  </span>
+                  <span class="text-card"><h3>Daily Mix 1</h3>
+                  </span>
+                </div>
+                
+              </div>
+               </div>
+
+               <div class="popular-artist">
+                <h2>Artisti più popolari</h2>
+                <p>Più ascolti, più accurati saranno i suggerimenti</p>
+                <div class="row flex-container">
+                
+                  <div class="card" id="lana-del-rey">
+                    <span class="album-card rounded">
+                      <img src="./img/youg.jpeg" alt="Yong Lana del Rey">
+                    </span>
+                    <span class="text-card"><h3>Lana del Rey</h3>
+                    </span>
+                  </div>
+                  <div class="card" id="enaudi">
+                    <span class="album-card rounded">
+                      <img src="./img/einaudi.jpeg" alt="Ludovico Enaudi">
+                    </span>
+                    <span class="text-card"><h3> Ludovico Enaudi</h3>
+                    </span>
+                  </div>
+                  
+                </div>
+                 </div>
+
+          
           </div>
         </main>
       </div>
