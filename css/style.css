@@ -298,7 +298,7 @@ main .btn {
   transform: translate(-50%, -50%);
 }
 
-.album-card span:hover{
+.album-card:hover span {
   visibility: visible;
 }
 
