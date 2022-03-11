@@ -51,6 +51,15 @@ body {
   color: white;
 }
 
+h2 {
+  font-weight: 400;
+  margin: 0;
+}
+p {
+  color: #7a7d81;
+  font-weight: 100;
+}
+
 .filter {
   filter: invert(35%) saturate(100%) brightness(100%);
 }
@@ -70,6 +79,7 @@ body {
 .icon {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 .icon img {
@@ -84,7 +94,9 @@ body {
 }
 
 .icon a:hover,
-label:hover, .btn:hover {
+label:hover,
+.btn:hover,
+li {
   cursor: pointer;
 }
 
@@ -115,7 +127,7 @@ aside .logo {
 
 aside .logo img {
   width: 60%;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 aside ul {
@@ -132,7 +144,6 @@ li,
 aside ul li {
   color: #a3a3a3;
 }
-
 
 /* NON FUNZIONA! FIXARE!! */
 aside input:checked ~ span::after {
@@ -179,8 +190,7 @@ aside ul li:hover {
 }
 
 .user {
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 10px;
 }
 
 .user a {
@@ -204,15 +214,20 @@ main .top-bar {
 }
 
 main .btn {
+  transition: all 0.2s ease-in-out;
   text-transform: uppercase;
   border: 1px solid white;
   border-radius: 25px;
   max-width: max-content;
   padding: 0.5% 2%;
-  font-size: small;
+  font-size: 0.8em;
   margin: 0 10px;
+  margin-right: 20px;
 }
 
+.btn:hover {
+  transform: scale(1.1);
+}
 .main-content {
   height: 100%;
   width: 100%;
@@ -226,7 +241,7 @@ main .btn {
   color: #7a7d81;
   padding: 20px 0;
   text-transform: uppercase;
-  font-size: 10px;
+  
 }
 
 .top-nav input:checked ~ span::after {
@@ -255,12 +270,16 @@ main .btn {
 
 /* MAIN CARD */
 
-
 .row {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 10px;
+}
+
+.created-for-user p,
+.popular-artist p {
+  margin-bottom: 20px;
 }
 
 .card {
@@ -269,13 +288,14 @@ main .btn {
   font-weight: bold;
 }
 
-.card:hover{
+.card:hover {
   cursor: pointer;
 }
 
 .album-card {
   display: flex;
   position: relative;
+  
 }
 
 .album-card img {
@@ -283,11 +303,11 @@ main .btn {
 }
 
 .album-card span {
-  visibility:hidden;
+  visibility: hidden;
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 100;
+
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -302,33 +322,23 @@ main .btn {
   visibility: visible;
 }
 
-/*
-.album-card span:hover {
-  visibility: visible;
-  position: absolute;
-}
-
-*/
-
-.rounded img {
+.rounded {
   border-radius: 100%;
+  overflow: hidden;
 }
 
 .text-card h3 {
-  font-size: 20px;
+  font-size: 1.5em;
   text-align: center;
 }
 
 .text-card p {
-  font-size: 10px;
+  font-size: 0.8em;
   text-align: center;
   color: #a3a3a3;
 }
 
-
-
-
-.popular-artist{
+.popular-artist {
   padding-bottom: 90px;
 }
 
@@ -363,11 +373,19 @@ footer img {
 }
 
 .sub-text {
-  font-size: 10px;
+  font-size: 0.8em;
   color: #a3a3a3;
 }
 
 /* FOOTER CENT BAR */
+
+#play {
+  transition: all 0.2s ease-in-out;
+}
+
+#play:hover {
+  transform: scale(1.1);
+}
 
 .bar {
   background-color: #5a5a5a;
@@ -376,24 +394,85 @@ footer img {
 }
 
 .song-timing {
-  width: 200px;
+  width: 400px;
+}
+
+.played-timing {
+  position: relative;
+  background-color: #c1c1c1;
+  z-index: 100;
+  width: 50px;
+  top: -3px;
+}
+
+.dot {
+  visibility: hidden;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #adff2f;
+  z-index: 100;
+  position: absolute;
+  top: -3px;
+  right: 0;
+}
+
+ul li:hover .dot {
+  visibility: visible;
 }
 
 .volume {
   width: 80px;
-  margin: 0 10px;
+  margin-right: 10px;
 }
+
 .pl-b-cent {
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 20px;
   padding-bottom: 10px;
 }
 
 .time {
-  font-size: 10px;
+  font-size: 0.6em;
   font-weight: bold;
   padding: 10px;
+}
+
+/* FOOTER right BAR */
+
+.current-volume {
+  position: relative;
+  background-color: #c1c1c1;
+  z-index: 100;
+  width: 40px;
+  top: -3px;
 }
 
 .pl-b-right {
   gap: 10px;
 }
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 992px) {
+  .card {
+    width: calc(100% / 4 - 10px);
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: calc(100% / 2 - 10px);
+  }
+
+  .top-ul {
+    display: flex;
+  }
+
+  .wrapper-content {
+    height: calc(100% - 80px);
+  }
+}
+
+
